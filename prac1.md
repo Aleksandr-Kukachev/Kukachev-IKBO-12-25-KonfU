@@ -60,3 +60,31 @@ labex:/etc/ $ cat /etc/protocols | sort -k2 -nr | head -5 | awk '{print $2, $1}'
 139 hip
 138 manet
 ```
+
+## Задача 3
+
+Написать программу banner средствами bash для вывода текстов, как в следующем примере (размер баннера должен меняться!):
+
+```
+[root@localhost ~]# ./banner "Hello from RTU MIREA!"
++-----------------------+
+| Hello from RTU MIREA! |
++-----------------------+
+```
+
+Перед отправкой решения проверьте его в ShellCheck на предупреждения.
+
+```
+#!/bin/bash
+
+var="$1"
+var_len=${#var}
+
+printf -v var2 '%*s' "$var_len" ''
+
+var2=${var2// /-}
+
+echo "+-${var2}-+" 
+echo "| ${var} |"
+echo "+-${var2}-+"
+```
