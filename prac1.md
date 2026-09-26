@@ -88,3 +88,32 @@ echo "+-${var2}-+"
 echo "| ${var} |"
 echo "+-${var2}-+"
 ```
+
+## Задача 4
+
+Написать программу для вывода всех идентификаторов (по правилам C/C++ или Java) в файле (без повторений).
+
+Пример для hello.c:
+
+```
+h hello include int main n printf return stdio void world
+```
+
+```
+grep -oE '[a-zA-Z_][a-zA-Z0-9_]*' hello.c | sort -u | tr '\n' ' ' && echo ""
+
+include int main printf return stdio 
+```
+
+## Задача 5
+
+Написать программу для регистрации пользовательской команды (правильные права доступа и копирование в /usr/local/bin).
+
+Например, пусть программа называется reg:
+
+```
+./reg banner
+```
+
+В результате для banner задаются правильные права доступа и сам banner копируется в /usr/local/bin.
+
