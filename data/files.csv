@@ -1,0 +1,7 @@
+path,type,content
+/,dir,
+/hello.txt,file,SGVsbG8sIHdvcmxkIQo=
+/file with spaces.txt,file,UXVvdGVkIHBhdGggd29ya3MhCg==
+/.hidden,file,SGlkZGVuIGZpbGU=
+/binary.bin,file,AP8Q
+"/file, comma.txt",file,Q1NWIGNvbW1hIHF1b3RlIHdvcmtzIQ==

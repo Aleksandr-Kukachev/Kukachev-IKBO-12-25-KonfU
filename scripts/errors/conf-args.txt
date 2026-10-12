@@ -1,0 +1,3 @@
+pwd
+conf-dump extra
+help

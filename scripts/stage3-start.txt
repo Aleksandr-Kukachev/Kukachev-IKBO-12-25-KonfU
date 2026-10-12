@@ -1,0 +1,22 @@
+# Successful command modes on deep.csv, then an intentional error.
+help
+conf-dump
+pwd
+ls
+ls -a /
+ls -- /home/user/Documents
+cd /home/user/Documents
+pwd
+ls .
+ls notes.txt
+cat notes.txt
+cd 'My Projects'
+cat "readme.txt"
+cat -- ./readme.txt
+cd ..
+cd -- ../..
+pwd
+cd
+pwd
+cd /does-not-exist
+pwd

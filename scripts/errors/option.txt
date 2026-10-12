@@ -1,0 +1,3 @@
+pwd
+ls -Z
+help

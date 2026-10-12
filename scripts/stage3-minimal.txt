@@ -1,0 +1,6 @@
+conf-dump
+pwd
+ls
+ls -a
+cd ..
+pwd

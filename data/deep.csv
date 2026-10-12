@@ -1,0 +1,11 @@
+path,type,content
+/,dir,
+/home,dir,
+/home/user,dir,
+/home/user/Documents,dir,
+/home/user/Documents/My Projects,dir,
+/home/user/Documents/My Projects/readme.txt,file,SGVsbG8gZnJvbSBkZWVwIFZGUyEK
+/home/user/Documents/notes.txt,file,RXhhbXBsZSBub3Rlcwo=
+/etc,dir,
+/etc/settings.txt,file,Y29sb3I9Ymx1ZQo=
+/.hidden,file,cm9vdCBoaWRkZW4gZmlsZQ==

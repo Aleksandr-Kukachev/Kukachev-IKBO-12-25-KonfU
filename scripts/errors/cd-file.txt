@@ -1,0 +1,3 @@
+pwd
+cd /home/user/Documents/notes.txt
+help

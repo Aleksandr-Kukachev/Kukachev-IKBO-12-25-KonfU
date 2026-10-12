@@ -1,0 +1,70 @@
+vfs=data/deep.csv
+script=scripts/stage3-start.txt
+/$ help
+ls [-a] [--] [path]
+cd [--] [path]
+pwd
+cat [--] path
+conf-dump
+help
+exit
+/$ conf-dump
+vfs=data/deep.csv
+script=scripts/stage3-start.txt
+/$ pwd
+/
+/$ ls
+etc
+home
+/$ ls -a /
+.
+..
+.hidden
+etc
+home
+/$ ls -- /home/user/Documents
+My Projects
+notes.txt
+/$ cd /home/user/Documents
+/home/user/Documents$ pwd
+/home/user/Documents
+/home/user/Documents$ ls .
+My Projects
+notes.txt
+/home/user/Documents$ ls notes.txt
+notes.txt
+/home/user/Documents$ cat notes.txt
+Example notes
+/home/user/Documents$ cd 'My Projects'
+/home/user/Documents/My Projects$ cat "readme.txt"
+Hello from deep VFS!
+/home/user/Documents/My Projects$ cat -- ./readme.txt
+Hello from deep VFS!
+/home/user/Documents/My Projects$ cd ..
+/home/user/Documents$ cd -- ../..
+/home$ pwd
+/home
+/home$ cd
+/$ pwd
+/
+/$ cd /does-not-exist
+cd: no such file or directory: /does-not-exist
+script stopped at line 21
+
+--- Interactive core demonstration ---
+vfs=(default)
+script=(none)
+/$ ls
+etc
+home
+/$ cd /home/user/Documents
+/home/user/Documents$ cat readme.txt
+Hello from the default VFS!
+/home/user/Documents$ ls "unfinished
+error: unclosed quote
+/home/user/Documents$ unknown
+unknown: command not found
+/home/user/Documents$ pwd
+/home/user/Documents
+/home/user/Documents$ exit
+Bye!

@@ -1,0 +1,6 @@
+ls
+ls -a
+cat "file with spaces.txt"
+cat 'file, comma.txt'
+ls hello.txt
+cat hello.txt
